@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>Resultado IMC</title>
+</head>
+<body>
+    
+    <div class="contenedor resultado">
+        <div class="title"><h1>CALCULADORA IMC</h1></div>
+        <h3>Resultado</h3>
+        <h1 class="imc"></h1>
+
+        <div class="slidecontaine">
+            <input type="range" id="rango" min="18.5" max="40" autocomplete="off" step="1" disabled>
+        </div>
+
+        <h4 id="pesoIdeal"></h4>
+        <ul>
+            <li><img id="bajo" class="bascula"src="../image/bascula.png" alt="1"> Bajo Peso</li>
+            <li><img id="saludable" class="bascula"src="../image/bascula.png" alt="1"> Saludable</li>
+            <li><img id="exeso" class="bascula"src="../image/bascula.png" alt="1"> Exeso de Peso</li>
+            <li><img id="obeso" class="bascula"src="../image/bascula.png" alt="1"> Obeso</li>
+        </ul>
+        <button id="btnNext">Siguiente usuario</button>
+    </div>
+
+    <div class="dashboard">
+        
+        <div class="titleEstadistica"><h1>ESTADISTICA</h1></div>
+        
+        <!-- Diagramas -->
+        <div id="graficos"></div>
+        
+    <script src="../scritps/resultados.js" type="module"></script>
+</body>
+</html>

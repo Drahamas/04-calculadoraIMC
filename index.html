@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Calculadora IMC</title>
+</head>
+<body>
+    
+    <div class="contenedor">
+        <div class="title"><h1>CALCULADORA IMC</h1></div>
+        <h3>Descubre su indice de masa corporal</h3>
+        <form id="form">
+            
+            <table>
+                <tr>
+                    <td><label>Sexo </label></td>
+                    <td><img class="imagen hombreSex" src="./image/hombre.png" alt="hombre">
+                        <img class="linea" src="./image/linea.png" alt="">
+                        <img class="imagen mujerSex"src="/image/mujer.png" alt=""></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label>Edad </label></td>
+                    <td><input id="edad" class="input" type="number" required></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><label>Peso </label></td>
+                    <td><input id="peso" class="input" type="number" required></td>
+                    <td><h2 style="color: rgb(95, 195, 38)">kg</h2></td>
+                </tr>
+                <tr>
+                    <td><label>Altura </label></td>
+                    <td><input id="altura" class="input" type="text" required></td>
+                    <td><h2 style="color: rgb(95, 195, 38);">m</h2></td>
+                </tr>
+                <tr>
+                    <td colspan="3"><button class="btn">CALCULAR IMC</button></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <script src="./scritps/script.js" type="module"></script>
+</body>
+</html>
