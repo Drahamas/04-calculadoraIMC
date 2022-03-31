@@ -56,7 +56,7 @@ form.addEventListener("submit", (e) => {
         imc = imc.toFixed(2);
         const registroIMC = new Persona(imc, sexo, edad, peso, altura);
 
-        usuarios.push(registroIMC)
+        // usuarios.push(registroIMC)
         localStorage.setItem("regImc", JSON.stringify(registroIMC));
         localStorage.setItem("usuarios", JSON.stringify(usuarios));
         window.location.href = "./pages/resultado.html";
